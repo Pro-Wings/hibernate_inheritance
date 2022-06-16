@@ -23,10 +23,17 @@
 		<property name="current_session_context_class">thread</property>
 
 		<!-- Domain Model classes to be mapped -->
-		<mapping class="hibernate_inheritance.demo.Employee" />
+ 		<mapping class="hibernate_inheritance.demo.Employee" />
 		<mapping class="hibernate_inheritance.demo.RegularEmployee" />
 		<mapping class="hibernate_inheritance.demo.ContractorEmployee" />
+		
+		<mapping class="hibernate_inheritance.demo.table_per_class.Emp" />
+		<mapping class="hibernate_inheritance.demo.table_per_class.P_Emp" />
+		<mapping class="hibernate_inheritance.demo.table_per_class.C_Emp" />
 
+		<mapping class="hibernate_inheritance.demo.joined.Employee" />
+		<mapping class="hibernate_inheritance.demo.joined.RegularEmployee" />
+		<mapping class="hibernate_inheritance.demo.joined.ContractorEmployee" /> 
 
 	</session-factory>
 </hibernate-configuration>
